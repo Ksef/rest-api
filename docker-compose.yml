@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  rest-api:
+    container_name: kotlin-rest-api
+    image: kotlin-rest-api:0.0.1
+    ports:
+      - 8081:8081
+    environment:
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: root
+      DATABASE_URL: jdbc:mysql://localhost:3306/kotlin_test_db
